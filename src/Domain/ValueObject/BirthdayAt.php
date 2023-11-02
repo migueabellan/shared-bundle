@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Migueabellan\SharedBundle\Domain\ValueObject;
 
-use Migueabellan\SharedBundle\Domain\ValueObject\BuiltinType\AbstractDateTimeValueObject;
+use Migueabellan\SharedBundle\Domain\ValueObject\BuiltinType\AbstractDateValueObject;
 
-class BirthdayAt extends AbstractDateTimeValueObject
+class BirthdayAt extends AbstractDateValueObject
 {
 }
