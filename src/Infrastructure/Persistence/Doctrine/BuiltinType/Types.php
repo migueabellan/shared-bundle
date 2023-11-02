@@ -14,7 +14,7 @@ use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\Delete
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\EmailAddressType;
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\LongTextType;
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\NumberType;
-use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\StrType;
+use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\TextType;
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\UpdatedAtType;
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\UrlAddressType;
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\UuidType;
@@ -31,7 +31,7 @@ final class Types
     private const NUMBER = 'number_value_object';
 
     // STRING
-    private const STRING = 'string_value_object';
+    private const TEXT = 'text_value_object';
     private const LONG_TEXT = 'long_text_value_object';
     private const EMAIL_ADDRESS = 'email_address_value_object';
     private const URL_ADDRESS = 'url_address_value_object';
@@ -54,7 +54,7 @@ final class Types
 
         self::NUMBER => NumberType::class,
 
-        self::STRING => StrType::class,
+        self::TEXT => TextType::class,
         self::LONG_TEXT => LongTextType::class,
         self::EMAIL_ADDRESS => EmailAddressType::class,
         self::URL_ADDRESS => UrlAddressType::class,

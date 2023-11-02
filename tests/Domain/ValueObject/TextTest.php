@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Migueabellan\SharedBundle\Tests\Domain\ValueObject;
 
 use Migueabellan\SharedBundle\Domain\Exception\InvalidArgumentException;
-use Migueabellan\SharedBundle\Domain\ValueObject\Str;
+use Migueabellan\SharedBundle\Domain\ValueObject\Text;
 use PHPUnit\Framework\TestCase;
 
-class StrTest extends TestCase
+class TextTest extends TestCase
 {
     public function testNotValid()
     {
@@ -19,16 +19,16 @@ class StrTest extends TestCase
             string string string string string string string string string string string
             string string string string string';
 
-        Str::from($value);
+            Text::from($value);
     }
 
     public function testValueObject()
     {
         $value = 'string';
-        $str = Str::from($value);
+        $text = Text::from($value);
 
-        $this->assertEquals(Str::class, get_class($str));
-        $this->assertEquals($value, $str->value());
-        $this->assertEquals($value, $str);
+        $this->assertEquals(Text::class, get_class($text));
+        $this->assertEquals($value, $text->value());
+        $this->assertEquals($value, $text);
     }
 }

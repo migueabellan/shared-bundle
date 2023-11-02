@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Migueabellan\SharedBundle\Tests\Domain\Collection;
 
-use Migueabellan\SharedBundle\Domain\ValueObject\Str;
+use Migueabellan\SharedBundle\Domain\ValueObject\Text;
 use PHPUnit\Framework\TestCase;
 
 class AbstractCollectionTest extends TestCase
@@ -12,9 +12,9 @@ class AbstractCollectionTest extends TestCase
     public function testCollection()
     {
         $array = [
-            Str::from('a'),
-            Str::from('b'),
-            Str::from('c')
+            Text::from('a'),
+            Text::from('b'),
+            Text::from('c')
         ];
 
         $collection = AbstractCollectionTester::from($array);
@@ -37,9 +37,9 @@ class AbstractCollectionTest extends TestCase
 
     public function testAddItem()
     {
-        $a = Str::from('c');
-        $b = Str::from('b');
-        $c = Str::from('c');
+        $a = Text::from('c');
+        $b = Text::from('b');
+        $c = Text::from('c');
         $array = [$a, $b];
 
         $collection = AbstractCollectionTester::from($array);
@@ -53,9 +53,9 @@ class AbstractCollectionTest extends TestCase
 
     public function testRemoveItem()
     {
-        $a = Str::from('c');
-        $b = Str::from('b');
-        $c = Str::from('c');
+        $a = Text::from('c');
+        $b = Text::from('b');
+        $c = Text::from('c');
         $array = [$a, $b, $c];
 
         $collection = AbstractCollectionTester::from($array);
