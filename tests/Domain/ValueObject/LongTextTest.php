@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace Migueabellan\SharedBundle\Tests\Domain\ValueObject;
 
-use Migueabellan\SharedBundle\Domain\ValueObject\Text;
+use Migueabellan\SharedBundle\Domain\ValueObject\LongText;
 use PHPUnit\Framework\TestCase;
 
-class TextTest extends TestCase
+class LongTextTest extends TestCase
 {
     public function testValueObject()
     {
         $value = 'text';
-        $text = Text::from($value);
+        $text = LongText::from($value);
 
-        $this->assertEquals(Text::class, get_class($text));
+        $this->assertEquals(LongText::class, get_class($text));
         $this->assertEquals($value, $text->value());
         $this->assertEquals($value, $text);
     }

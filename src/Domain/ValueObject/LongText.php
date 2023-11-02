@@ -6,6 +6,6 @@ namespace Migueabellan\SharedBundle\Domain\ValueObject;
 
 use Migueabellan\SharedBundle\Domain\ValueObject\BuiltinType\AbstractStringValueObject;
 
-class Text extends AbstractStringValueObject
+class LongText extends AbstractStringValueObject
 {
 }
