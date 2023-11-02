@@ -25,7 +25,6 @@ class StrTest extends TestCase
     public function testValueObject()
     {
         $value = 'string';
-
         $str = Str::from($value);
 
         $this->assertEquals(Str::class, get_class($str));

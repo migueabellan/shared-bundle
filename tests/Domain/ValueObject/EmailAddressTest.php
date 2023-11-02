@@ -22,7 +22,6 @@ class EmailAddressTest extends TestCase
     public function testValueObject()
     {
         $value = 'email@domain.es';
-
         $emailAddress = EmailAddress::from($value);
 
         $this->assertEquals(EmailAddress::class, get_class($emailAddress));

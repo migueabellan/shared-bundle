@@ -20,7 +20,6 @@ class UuidTest extends TestCase
     public function testValueObject()
     {
         $value = 'f2e56fdf-1f28-4606-ad27-5892c9e0701c';
-
         $uuid = Uuid::from($value);
 
         $this->assertEquals(Uuid::class, get_class($uuid));

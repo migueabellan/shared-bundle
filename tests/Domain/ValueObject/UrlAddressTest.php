@@ -22,7 +22,6 @@ class UrlAddressTest extends TestCase
     public function testValueObject()
     {
         $value = 'http://www.domain.es';
-
         $urlAddress = UrlAddress::from($value);
 
         $this->assertEquals(UrlAddress::class, get_class($urlAddress));

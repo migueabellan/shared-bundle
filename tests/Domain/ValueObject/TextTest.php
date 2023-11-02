@@ -12,7 +12,6 @@ class TextTest extends TestCase
     public function testValueObject()
     {
         $value = 'text';
-
         $text = Text::from($value);
 
         $this->assertEquals(Text::class, get_class($text));
