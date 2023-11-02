@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\BuiltinType;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
-use Doctrine\DBAL\Types\BooleanType;
+use Doctrine\DBAL\Types\IntegerType;
 
-abstract class AbstractBooleanType extends BooleanType
+abstract class AbstractIntType extends IntegerType
 {
     abstract protected function className(): string;
 

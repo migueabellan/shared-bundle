@@ -7,6 +7,7 @@ namespace Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\BuiltinT
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\BooleanType;
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\DecimalType;
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\EmailAddressType;
+use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\NumberType;
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\StrType;
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\TextType;
 use Migueabellan\SharedBundle\Infrastructure\Persistence\Doctrine\Mapping\UrlAddressType;
@@ -17,6 +18,7 @@ final class Types
     private const BOOLEAN = 'boolean_value_object';
     private const DECIMAL = 'decimal_value_object';
     private const EMAIL_ADDRESS = 'email_address_value_object';
+    private const NUMBER = 'number_value_object';
     private const STRING = 'string_value_object';
     private const TEXT = 'text_value_object';
     private const URL_ADDRESS = 'url_address_value_object';
@@ -26,6 +28,7 @@ final class Types
         self::BOOLEAN => BooleanType::class,
         self::DECIMAL => DecimalType::class,
         self::EMAIL_ADDRESS => EmailAddressType::class,
+        self::NUMBER => NumberType::class,
         self::STRING => StrType::class,
         self::TEXT => TextType::class,
         self::URL_ADDRESS => UrlAddressType::class,
