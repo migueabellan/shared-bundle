@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Migueabellan\SharedBundle\Domain\ValueObject;
 
 use Migueabellan\SharedBundle\Domain\Exception\InvalidArgumentException;
-use Migueabellan\SharedBundle\Domain\ValueObject\BuiltinType\AbstractString;
+use Migueabellan\SharedBundle\Domain\ValueObject\BuiltinType\AbstractStringValueObject;
 
-class EmailAddress extends AbstractString
+class EmailAddress extends AbstractStringValueObject
 {
     private const MESSAGE_NOT_VALID = 'The value <%value%> is not a valid email address';
 

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Migueabellan\SharedBundle\Domain\ValueObject;
 
-use Migueabellan\SharedBundle\Domain\ValueObject\BuiltinType\AbstractString;
+use Migueabellan\SharedBundle\Domain\ValueObject\BuiltinType\AbstractStringValueObject;
 
-class Text extends AbstractString
+class Text extends AbstractStringValueObject
 {
 }

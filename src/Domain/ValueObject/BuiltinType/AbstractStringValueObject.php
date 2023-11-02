@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Migueabellan\SharedBundle\Domain\ValueObject\BuiltinType;
 
-abstract class AbstractString implements ValueObjectInterface
+abstract class AbstractStringValueObject implements ValueObjectInterface
 {
     final private function __construct(private readonly string $value)
     {
