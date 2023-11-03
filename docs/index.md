@@ -1,3 +1,9 @@
-# SHARED BUNDLE
+# Documentation
 
-WIP
+## Application
+
+## Domain
+
+- [`Value Object`](Domain/ValueObject.md)
+
+## Infrastructure

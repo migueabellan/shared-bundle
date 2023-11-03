@@ -1,4 +1,4 @@
-# Value objects [WIP]
+# Value objects
 
 
 ### Bool
