@@ -13,7 +13,7 @@ jobs:
     - name: Install dependencies
       uses: php-actions/composer@v6
       with:
-        php_version: 8.2
+        php_version: "8.2"
         composer_version: 2
 
     - name: Run cscheck
@@ -21,3 +21,6 @@ jobs:
 
     - name: Run phpstan
       run: composer phpstan
+
+    - name: Run phpunit
+      run: php vendor/bin/phpunit --testdox tests/
