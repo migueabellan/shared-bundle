@@ -1,0 +1,23 @@
+# Doc: https://github.com/php-actions/composer
+
+name: Test
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: [ubuntu-latest]
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      uses: php-actions/composer@v6
+      with:
+        php_version: 8.2
+        composer_version: 2
+
+    - name: Run cscheck
+      run: composer cscheck
+
+    - name: Run phpstan
+      run: composer phpstan
